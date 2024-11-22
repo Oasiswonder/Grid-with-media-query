@@ -1,0 +1,89 @@
+*html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-color: rgba(128, 128, 128, 0.13);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 3rem;
+}
+.container-1, .container-2, .container-3, .container-4 {
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid white;
+    width: 40rem;
+    height: 20rem;
+    text-align:left;
+    justify-items:left;
+    padding-top: 2rem;
+    border-radius: 1rem;
+   
+}
+
+.container-1:hover, .container-2:hover, .container-3:hover, .container-4:hover {
+    background-color: rgb(221, 56, 221);
+}
+
+p {
+    font-size: 1.4rem;
+    width: 18rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+span {
+    font-weight: bold;
+}
+
+h2, p {
+    padding-left: 10rem;
+    
+}
+
+
+@media screen and (max-width:800px){
+    .main-container {
+        display: block;
+        
+    }
+
+    .container-1, .container-2, .container-3, .container-4{
+        margin: 3rem;
+        width: 50rem;
+        height: 10rem;
+        padding-top: 0.5rem;
+        
+    }
+    h2, p {
+        padding-left: 5rem;
+        font-size: 1rem;
+        /* word-spacing: 0.1rem; */
+        
+        
+    }
+    p {
+        display: block;
+        width: 86%;
+
+    }
+    .container-1:hover, .container-2:hover, .container-3:hover, .container-4:hover {
+        background-color: yellow;
+        border: none;
+    }
+   
+    
+}
